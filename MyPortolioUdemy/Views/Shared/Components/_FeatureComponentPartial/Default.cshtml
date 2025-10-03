@@ -1,5 +1,5 @@
-﻿<!-- home
-  ================================================== -->
+﻿@using MyPortolioUdemy.Dal.Entities
+@model Feature
 <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="https://i.hizliresim.com/e5mffd6.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
     <div class="overlay"></div>
@@ -9,12 +9,10 @@
 
         <div class="row home-content__main">
 
-            <h3>Merhaba</h3>
+            <h3>@Model.Title</h3>
 
             <h1>
-                I am Jonathan Doe. <br>
-                I am a graphic & UI/UX <br>
-                designer based in Somewhere.
+                @Model.Description
             </h1>
 
             <div class="home-content__buttons">
@@ -37,22 +35,13 @@
     </div> <!-- end home-content -->
 
     <ul class="home-social">
-        <li>
-            <a href="#"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+               <li>
+            <a href="https://www.linkedin.com/in/yunusguldas/"><i class="im im-Linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
         </li>
         <li>
-            <a href="#"><i class="im im-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            <a href="https://www.instagram.com/guldas_yunus/"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
         </li>
-        <li>
-            <a href="#"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-        </li>
-        <li>
-            <a href="#"><i class="im im-behance" aria-hidden="true"></i><span>Behance</span></a>
-        </li>
-        <li>
-            <a href="#"><i class="im im-pinterest" aria-hidden="true"></i><span>Pinterest</span></a>
-        </li>
-    </ul>
+            </ul>
     <!-- end home-social -->
 
 </section> <!-- end s-home -->
